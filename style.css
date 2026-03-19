@@ -1,0 +1,162 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f7f0;  /* Светлый зелёный фон */
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.1);  /* Зелёная тень */
+    padding: 20px;
+}
+
+/* Шапка (главное меню) */
+.header {
+    background: #2c5e2c;  /* Тёмно-зелёный */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #3e8e3e;  /* Средне-зелёный */
+    border-radius: 5px;
+}
+
+.header a.selected {
+    background: #90EE90;  /* Светло-зелёный */
+    color: #1a4d1a;  /* Тёмно-зелёный для текста */
+    font-weight: bold;
+}
+
+/* Основной контейнер (меню слева + контент) */
+.main {
+    display: flex;
+    gap: 20px;
+}
+
+/* Левое меню */
+.sidebar {
+    width: 200px;
+    background: #e8f3e8;  /* Очень светлый зелёный */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px;
+    margin-bottom: 5px;
+    background: #c0e0c0;  /* Светло-зелёный */
+    color: #1a4d1a;  /* Тёмно-зелёный */
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.sidebar a.selected {
+    background: #4CAF50;  /* Яркий зелёный */
+    color: white;
+    font-weight: bold;
+}
+
+/* Контент (таблица умножения) */
+.content {
+    flex: 1;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #90b890;  /* Зелёная граница */
+    min-height: 400px;
+}
+
+/* Стили для табличной вёрстки */
+.table-layout table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-layout td {
+    border: 1px solid #7aa87a;  /* Зелёная граница */
+    padding: 10px;
+    vertical-align: top;
+    background: #fafffa;  /* Очень светлый зелёный */
+}
+
+.table-layout td a {
+    text-decoration: none;
+    color: #2c7a2c;  /* Зелёный */
+    font-weight: bold;
+}
+
+.table-layout td a:hover {
+    color: #4CAF50;  /* Яркий зелёный при наведении */
+}
+
+/* Стили для блочной вёрстки - полностью как табличная */
+.block-layout {
+    display: flex;
+    flex-wrap: nowrap;  /* Запрещаем перенос на новую строку - все 8 столбцов в одной строке */
+    gap: 0;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.block-layout .ttRow {
+    background: #fafffa;  /* Тот же фон, что у таблицы */
+    border: 1px solid #7aa87a;  /* Тонкая зелёная граница как у таблицы */
+    padding: 10px;  /* Такие же отступы как у таблицы */
+    margin: 0;
+    flex: 1 1 0;  /* Равномерное распределение ширины как в таблице */
+    min-width: 0;  /* Разрешаем сжиматься */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Для одиночного столбца - на всю ширину */
+.block-layout .ttSingleRow {
+    background: #fafffa;
+    border: 1px solid #7aa87a;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.block-layout .ttRow a, 
+.block-layout .ttSingleRow a {
+    text-decoration: none;
+    color: #2c7a2c;  /* Зелёный */
+    font-weight: bold;
+}
+
+.block-layout .ttRow a:hover, 
+.block-layout .ttSingleRow a:hover {
+    color: #4CAF50;  /* Яркий зелёный при наведении */
+    text-decoration: none;  /* Убираем подчеркивание, как в табличной верстке */
+}
+
+/* Подвал */
+.footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #2c5e2c;  /* Тёмно-зелёный */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #90EE90;  /* Светло-зелёный */
+}
