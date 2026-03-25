@@ -1,0 +1,126 @@
+/* Общие стили */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.header-content {
+    display: flex; /* Резиновая верстка */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #bdc3c7;
+}
+
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+/* Стили для таблиц */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Чередование цвета строк для читаемости */
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Заголовки таблиц (h2) */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+/* Сообщения об ошибках */
+p {
+    margin: 0.5rem 0;
+}
+.content p {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+}
+
+/* Подвал */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 3px solid #e74c3c;
+}
+
+footer p {
+    margin: 0;
+    background: none;
+    color: white;
+    padding: 0;
+    border: none;
+}
